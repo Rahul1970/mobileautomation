@@ -1,0 +1,11 @@
+{
+    "id": "03f6",
+    "name": "Rahul Singh",
+    "age": 16,
+    "grade": "10th",
+    "subjects": [
+        "Computer Science",
+        "Philosophy",
+        "Art"
+    ]
+}

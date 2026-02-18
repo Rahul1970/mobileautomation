@@ -1,0 +1,77 @@
+{
+  "students": [
+    {
+      "grade": "PostDoc",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "History"
+      ],
+      "name": "Jane Smith",
+      "id": "2",
+      "age": 17
+    },
+    {
+      "id": "3",
+      "name": "David Johnson",
+      "age": 16,
+      "grade": "10th",
+      "subjects": [
+        "Computer Science",
+        "Spanish",
+        "Art"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Jacob Oram",
+      "age": 30,
+      "grade": "PostDoc",
+      "subjects": [
+        "Computer Science",
+        "Philosophy",
+        "InfoSec"
+      ]
+    },
+    {
+      "id": "956a",
+      "name": "Rahul Singh",
+      "age": 16,
+      "grade": "10th",
+      "subjects": [
+        "Astronomy"
+      ]
+    },
+    {
+      "id": "5b5c",
+      "grade": "10th",
+      "subjects": [
+        "Computer Science",
+        "Philosophy",
+        "Art"
+      ],
+      "name": "Rahul Singh",
+      "age": 16
+    },
+    {
+      "id": "586e",
+      "grade": "10th",
+      "subjects": [
+        "Astronomy"
+      ],
+      "name": "Rahul Singh",
+      "age": 16
+    },
+    {
+      "id": "5eeb",
+      "grade": "10th",
+      "subjects": [
+        "Computer Science",
+        "Philosophy",
+        "Art"
+      ],
+      "name": "Rahul Singh",
+      "age": 16
+    }
+  ]
+}
