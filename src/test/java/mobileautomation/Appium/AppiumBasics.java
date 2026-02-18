@@ -3,6 +3,7 @@ package mobileautomation.Appium;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.io.BufferedReader;
@@ -26,22 +27,43 @@ public class AppiumBasics  extends BaseTest{
     	
     	
     	 driver.findElement(AppiumBy.accessibilityId("Preference")).click();
-         Thread.sleep(5000);
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
          driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
-         Thread.sleep(5000);
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
          driver.findElement(By.id("android:id/checkbox")).click();
-         Thread.sleep(10000);
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
          driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+         driver.findElement(By.id("android:id/edit")).sendKeys("rahulwifi");
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+         driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+         driver.navigate().back();
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
          
-     
          
-        // driver.findElement(By.xpath("//android.widget.ListView[@resource-id='android:id/list']/android.widget.LinearLayout[2]/android.widget.RelativeLayout")).click();
-         Thread.sleep(10000);
-         driver.findElement(By.id("android:id/edit")).sendKeys("rahulwifi");
-         Thread.sleep(5000);
-         driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
-         Thread.sleep(5000);
+         String s = driver.findElement(By.xpath("//android.widget.TextView[@content-desc='8. Headers']")).getText();
+         System.out.println(s);
+       
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='8. Headers']")).click();
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+         driver.navigate().back();
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+         
+        		 
+        		
+
+
          
         
       
