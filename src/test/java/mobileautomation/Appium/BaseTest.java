@@ -1,4 +1,4 @@
-package rahulshettyacademy.Appium;
+package mobileautomation.Appium;
 
 import java.io.BufferedReader;
 import java.io.File;

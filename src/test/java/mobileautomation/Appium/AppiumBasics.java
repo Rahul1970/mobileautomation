@@ -1,4 +1,4 @@
-package rahulshettyacademy.Appium;
+package mobileautomation.Appium;
 
 import java.io.File;
 import java.net.MalformedURLException;
