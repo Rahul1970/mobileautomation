@@ -39,10 +39,10 @@ public class UiAppiumTests extends BaseTest {
 
         // Click OK button
         preferencePage.clickOk();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         
         ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Press Android Back button safely
        // preferencePage.pressBack();
