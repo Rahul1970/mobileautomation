@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import mobileautomation.Appium.PreferencePage;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -26,7 +27,7 @@ public class AppiumBasics  extends BaseTest{
     public void AppiumTest() throws MalformedURLException, InterruptedException {
     	
     	
-    	 driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+    /*	 driver.findElement(AppiumBy.accessibilityId("Preference")).click();
          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
          driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
@@ -58,7 +59,33 @@ public class AppiumBasics  extends BaseTest{
          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
          driver.navigate().back();
-         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));  */
+    	
+    	
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        PreferencePage preferencePage = new PreferencePage(driver);
+
+        preferencePage.clickPreference();
+        preferencePage.clickPreferenceDependencies();
+        preferencePage.enableWifi();
+        preferencePage.openWifiSettings();
+        preferencePage.enterWifiName("rahulwifi");
+        preferencePage.clickOk();
+
+        preferencePage.pressBack();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        String text = preferencePage.getHeadersText();
+        System.out.println(text);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        preferencePage.clickHeaders();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        preferencePage.pressBack();
+    	
+    	
+    	
          
         		 
         		
