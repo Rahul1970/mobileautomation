@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Appium Suite">
+
+    <listeners>
+        <listener class-name="ui.appium.listeners.ExtentListener"/>
+    </listeners>
+
+    <test name="Mobile Tests">
+        <classes>
+            <class name="Appium.UiAppiumTests"/>
+          
+            
+            
+        </classes>
+         
+            
+        
+        
+        
+        
+    </test>
+
+</suite>
